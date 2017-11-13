@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { ActivityIndicator, Text, TouchableOpacity, View, Modal, WebView } from 'react-native'
 import cheerio from 'cheerio'
 import qs from 'qs'
@@ -21,15 +22,15 @@ const styles = {
 
 class Login extends React.Component {
   static propTypes = {
-    provider: React.PropTypes.string.isRequired,
-    callbackUrl: React.PropTypes.string.isRequired,
-    meteorServerDomain: React.PropTypes.string.isRequired,
-    meteorServerProtocol: React.PropTypes.string.isRequired,
-    clientId: React.PropTypes.string.isRequired,
-    scope: React.PropTypes.string,
-    url: React.PropTypes.string,
-    extraRequestParams: React.PropTypes.string,
-    styles: React.PropTypes.object
+    provider: PropTypes.string.isRequired,
+    callbackUrl: PropTypes.string.isRequired,
+    meteorServerDomain: PropTypes.string.isRequired,
+    meteorServerProtocol: PropTypes.string.isRequired,
+    clientId: PropTypes.string.isRequired,
+    scope: PropTypes.string,
+    url: PropTypes.string,
+    extraRequestParams: PropTypes.string,
+    styles: PropTypes.object
   }
 
   static defaultProps = {
@@ -41,7 +42,7 @@ class Login extends React.Component {
     stage: 'initial',
     targetUrl: ''
   }
-  
+
   constructor (props) {
     super(props)
 
@@ -56,7 +57,7 @@ class Login extends React.Component {
       buttonLoginText: Object.assign({}, styles.buttonLoginText, this.providerConfig.styles.buttonLoginText, propStyles.buttonLoginText),
       buttonLogoutText: Object.assign({}, styles.buttonLogoutText, this.providerConfig.styles.buttonLogoutText, propStyles.buttonLogoutText),
       text: Object.assign({}, styles.text, propStyles.text),
-      view: Object.assign({}, styles.view, propStyles.view),  
+      view: Object.assign({}, styles.view, propStyles.view),
     }
   }
 
@@ -81,7 +82,7 @@ class Login extends React.Component {
 
   navigation = ({ url }) => {
     const regex = new RegExp(`^${this.props.callbackUrl}\[\?#](.*)$`)
-    
+
     const parsedUrl = regex.exec(url)
     if (parsedUrl) {
       this.setState({ targetUrl : null })
