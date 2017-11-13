@@ -1,38 +1,69 @@
 {
-  "name": "react-native-meteor-oauth",
-  "version": "0.1.0",
-  "description": "OAuth login to a Meteor back-end from React Native",
-  "main": "index.js",
-  "scripts": {
-    "prepublish": "babel ./src --out-dir ./dist --source-maps --presets es2015,react,stage-2",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tableflip/react-native-meteor-oauth.git"
-  },
-  "keywords": [
-    "react-native",
-    "meteor",
-    "oauth"
+  "_args": [
+    [
+      {
+        "raw": "react-native-meteor-oauth",
+        "scope": null,
+        "escapedName": "react-native-meteor-oauth",
+        "name": "react-native-meteor-oauth",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/martin/Proyectos-Full-Stack/proyecto-dinamo/dinamo-app-react-native"
+    ]
   ],
-  "author": "TABLEFLIP",
-  "license": "ISC",
+  "_from": "react-native-meteor-oauth@latest",
+  "_id": "react-native-meteor-oauth@0.1.0",
+  "_inCache": true,
+  "_location": "/react-native-meteor-oauth",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/react-native-meteor-oauth-0.1.0.tgz_1477122104254_0.8232777530793101"
+  },
+  "_npmUser": {
+    "name": "richsilv",
+    "email": "silverton.richard@googlemail.com"
+  },
+  "_npmVersion": "3.8.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-meteor-oauth",
+    "scope": null,
+    "escapedName": "react-native-meteor-oauth",
+    "name": "react-native-meteor-oauth",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npmjs.org/react-native-meteor-oauth/-/react-native-meteor-oauth-0.1.0.tgz",
+  "_shasum": "03e2e39b4fabdc8d323637859f429dafaf23339b",
+  "_shrinkwrap": null,
+  "_spec": "react-native-meteor-oauth",
+  "_where": "/home/martin/Proyectos-Full-Stack/proyecto-dinamo/dinamo-app-react-native",
+  "author": {
+    "name": "TABLEFLIP"
+  },
   "bugs": {
     "url": "https://github.com/tableflip/react-native-meteor-oauth/issues"
   },
-  "homepage": "https://github.com/tableflip/react-native-meteor-oauth#readme",
   "dependencies": {
     "base-64": "^0.1.0",
     "cheerio": "^0.22.0",
     "events": "^1.1.1",
     "qs": "^6.3.0",
     "randomatic": "^1.1.5",
-    "react-native-meteor": "^1.0.1"
+    "react-native-meteor": "^1.2.0",
+    "buffer": "^5.0.8",
+    "stream": "0.0.2",
+    "prop-types": "^15.6.0"
   },
-  "peerDependencies": {
-    "react": "^15.0.0"
-  },
+  "description": "OAuth login to a Meteor back-end from React Native",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.16.0",
@@ -40,5 +71,40 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.17.0",
     "eslint": "^3.8.1"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "03e2e39b4fabdc8d323637859f429dafaf23339b",
+    "tarball": "https://registry.npmjs.org/react-native-meteor-oauth/-/react-native-meteor-oauth-0.1.0.tgz"
+  },
+  "gitHead": "c0563903c3b7d5d8daf2c18bd55f83a50403daa4",
+  "homepage": "https://github.com/tableflip/react-native-meteor-oauth#readme",
+  "keywords": [
+    "react-native",
+    "meteor",
+    "oauth"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "richsilv",
+      "email": "silverton.richard@googlemail.com"
+    }
+  ],
+  "name": "react-native-meteor-oauth",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^15.0.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tableflip/react-native-meteor-oauth.git"
+  },
+  "scripts": {
+    "prepublish": "babel ./src --out-dir ./dist --source-maps --presets es2015,react,stage-2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
 }
